@@ -1,4 +1,3 @@
-
 @import url(https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&display=swap);
 
 $primary: #81899b
@@ -15,6 +14,9 @@ a
     color: var(--font-color)
     text-decoration: none
 
+a:hover
+    text-decoration: underline
+
 header
     background-color: hsl(51, 72,86)
     height: 10vh
@@ -26,8 +28,19 @@ header
 
 .search-container
     display: flex
+    button
+        background: none
+        border: none
+        cursor: pointer
     svg 
         margin-left: 1em
+
+#search-bar.error
+    border-color: red
+    background-color: rgb(255, 162, 162)
+
+main
+    padding: 2em
 
 footer
     display: flex
