@@ -16,14 +16,9 @@ async function Post(data){
     })
 }
 
-var lastindex;
-
 async function loadJson(){
     const response = await fetch('/shoptacle/pages/clothes.json');
     const data = await response.json();
-
-    lastindex = data[data.length -1];
-
     console.log("JSON CARREGADO");
     return data;
 }
@@ -52,20 +47,26 @@ submit.addEventListener('submit', function(event){
     categoryEl = document.getElementById('category');
 
     nameEl.value == "" ? nameEl.classList.add('error') : nameEl.classList.remove('error');
-    priceEl.value == "" ? priceEl.classList.add('error') : priceEl.classList.remove('error');
+    priceEl.value == "" || priceEl.value < 0  ? priceEl.classList.add('error') : priceEl.classList.remove('error');
     categoryEl.value == "" ? categoryEl.classList.add('error') : categoryEl.classList.remove('error');
 
-    if(nameEl.value != "" && priceEl.value != "" && categoryEl.value != ""){
-        const newProduct = createProduct(lastindex, nameEl.value, priceEl.value, categoryEl.value);
+    if(nameEl.value != "" && priceEl.value > 0 && categoryEl.value != ""){
         const jsonPromise = loadJson();
-        joinJson(jsonPromise, newProduct);
+        joinJson(jsonPromise, nameEl.value, priceEl.value, categoryEl.value);
     }
     console.log("FORM INCOMPLETO");
 })
 
 
-async function joinJson(json, product){
+async function joinJson(json, name, price, category){
+    /* gets all the data */
     const oldData = await json;
+
+    /* Create new product */
+    const lastId = oldData.length;
+    const product = createProduct(lastId, name, price, category);
+    
+    /* add the new product with the others */
     let newData = oldData;
     newData.push(product);
 

@@ -5,9 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="icon" type="image/svg+xml" href="/shoptacle/svgs/manage_accounts_black_24dp.svg" />
+    <link rel="icon" type="image/svg+xml" href="/shoptacle/icons/manage_accounts_black_24dp.svg" />
     <link rel="stylesheet" href="/shoptacle/css/style.css">
-    <!-- <link rel="stylesheet" href="/css/style.css"> -->
     <title>Shoptacle - Add</title>
 </head>
 <body>
@@ -31,17 +30,17 @@
         <form id="submit">
             <div class="form-container">
                 <label for="name">Name:</label>
-                <input type="text" id="name">
+                <input type="text" id="name" name="name"> 
             </div>
             
             <div class="form-container">
-                <label for="name">Price:</label>
-                <input type="number" id="price">
+                <label for="price">Price:</label>
+                <input type="number" step="0.1" id="price" name="price">
                 </div>
 
             <div class="form-container">
-                <label for="name">Category:</label>
-                <input type="text" list="categorylist" id="category">
+                <label for="category">Category:</label>
+                <input type="text" list="categorylist" id="category" name="category">
                 <datalist id="categorylist">
                     <option>Top</option>
                     <option>Jackets</option>
@@ -68,7 +67,6 @@
         </div>
     </footer>
 
-    <!-- <script src="/js/add.js"></script> -->
     <script src="/shoptacle/js/add.js"></script>
     <script src="/shoptacle/js/search.js"></script>
 </body>

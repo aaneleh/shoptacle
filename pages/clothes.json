@@ -42,18 +42,9 @@
         "category": "BOTTOMS"
     },
     {
-        "name": "BBBBB",
-        "price": "666",
-        "category": "SHOES"
-    },
-    {
-        "name": "CCCC",
-        "price": "1000",
-        "category": "BOTTOMS"
-    },
-    {
-        "name": "NOME",
-        "price": "33",
-        "category": "CAT"
+        "id": 7,
+        "name": "RED T-SHIRT",
+        "price": "50.00",
+        "category": "TOP"
     }
 ]
