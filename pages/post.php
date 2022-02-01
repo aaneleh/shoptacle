@@ -1,8 +1,17 @@
-<?php
-    //VER NO VÍDEO O RESTO DISSO
-    //E DEPOIS VER NAQUELE OUTRO COMO MODIFICA O .JSON
+<?php 
+    echo("ACESSOU PHP");
 
-    $dados = json_decode($usuario, true);
+    $json = file_get_contents("php://input");
 
-    var_dump($dados);
+    $data = json_decode($json, true);
+
+    echo("DATA: ");
+    var_dump($data);
+
+    if(!file_put_contents("clothes.json", json_encode($data, JSON_PRETTY_PRINT), LOCK_EX)){
+        echo("ERRO SALVANDO O ARQUIVO");
+    } else {
+        echo("SUCESSO");
+    }
+
 ?>

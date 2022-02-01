@@ -1,0 +1,59 @@
+[
+    {
+        "id": 0,
+        "name": "WHITE T-SHIRT",
+        "price": 29.99,
+        "category": "TOPS"
+    },
+    {
+        "id": 1,
+        "name": "BLACK T-SHIRT",
+        "price": 29.99,
+        "category": "TOPS"
+    },
+    {
+        "id": 2,
+        "name": "DENIM JACKET",
+        "price": 59.99,
+        "category": "JACKETS"
+    },
+    {
+        "id": 3,
+        "name": "NIKE SNEAKER",
+        "price": 54.99,
+        "category": "SHOES"
+    },
+    {
+        "id": 4,
+        "name": "BLACK BOOTS",
+        "price": 109.99,
+        "category": "SHOES"
+    },
+    {
+        "id": 5,
+        "name": "DARK GREEN SHORTS",
+        "price": 59.99,
+        "category": "BOTTOMS"
+    },
+    {
+        "id": 6,
+        "name": "BLACK JEANS",
+        "price": 129.99,
+        "category": "BOTTOMS"
+    },
+    {
+        "name": "BBBBB",
+        "price": "666",
+        "category": "SHOES"
+    },
+    {
+        "name": "CCCC",
+        "price": "1000",
+        "category": "BOTTOMS"
+    },
+    {
+        "name": "NOME",
+        "price": "33",
+        "category": "CAT"
+    }
+]

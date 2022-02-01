@@ -1,5 +1,5 @@
 async function loadJson(){
-    const response = await fetch('json/clothes.json');
+    const response = await fetch('pages/clothes.json');
     const data = await response.json();
     
     for(i=0; i< data.length; i++){

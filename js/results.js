@@ -7,7 +7,7 @@ search_text.textContent = searchUrl;
 /* PEGA AS INFORMAÇÕES DO .JSON E COMPARA COM A PESQUISA, SE FOR TRUE COLOCA COMO RESULTADO */
 async function loadJson(){
     /* PEGA AS INFORMAÇÕES DO .JSON */
-    const response = await fetch('/shoptacle/json/clothes.json');
+    const response = await fetch('/shoptacle/pages/clothes.json');
     const data = await response.json();
     
     var found = false;
