@@ -1,8 +1,9 @@
 @import url(https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&display=swap);
 
-$primary: #81899b
-$accent: #302e24
-$warn: #dfa612
+$font-color: #000
+$background: #FFF
+$bright-color: hsl(51, 72,86)
+
 
 * 
     font-family: 'Arvo', serif
@@ -11,14 +12,14 @@ $warn: #dfa612
     position: relative
 
 a 
-    color: var(--font-color)
+    color: $font-color
     text-decoration: none
 
 a:hover
     text-decoration: underline
 
 header
-    background-color: hsl(51, 72,86)
+    background-color: $bright-color
     height: 10vh
     display: flex
     align-items: center
@@ -28,6 +29,7 @@ header
 
 .search-container
     display: flex
+    
     button
         background: none
         border: none
@@ -35,14 +37,37 @@ header
     svg 
         margin-left: 1em
 
-#search-bar.error
+.error
     border-color: red
     background-color: rgb(255, 162, 162)
 
 main
     padding: 2em
 
+.product 
+    margin: 0.5em
+    padding: 0.5em
+    border: 1px solid black
+    *
+        text-transform: capitalize
+    .category
+        width: fit-content
+        background-color: rgb(211, 211, 211)
+        border-radius: 0.25em 
+
+#search-text
+    text-transform: capitalize
+
+
 footer
-    display: flex
-    justify-content: space-between
     padding: 1em 2em
+    background-color: $bright-color
+    .links
+        display: flex
+        justify-content: space-between
+    .add-link
+        margin-top: 1em
+        text-align: center
+
+.form-container
+    margin: 2em

@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/style.css">
-    <title>Shoptacle search</title>
+    <link rel="icon" type="image/svg+xml" href="/svgs/search_black_24dp.svg" />
+    <link rel="stylesheet" href="/shoptacle/css/style.css">
+    <title>Shoptacle search results</title>
 </head>
 <body>
     <header>
         <div class="logo-container">
-            <a href="/index.html">
+            <a href="/shoptacle/index.html">
                 <h2>Shoptacle</h2>
             </a>
         </div>
@@ -24,10 +25,11 @@
     </header>
 
     <main>
-        Results for:
+        <h3>Results for: <span id="search-text"> [placeholder] </span></h3>
+        <div id="results"> </div>
     </main>
 
-
-    <script src="/js/search.js"></script>
+    <script src="/shoptacle/js/results.js"></script>
+    <script src="/shoptacle/js/search.js"></script>
 </body>
 </html>

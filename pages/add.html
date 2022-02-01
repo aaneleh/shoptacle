@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/svg+xml" href="/shoptacle/svgs/manage_accounts_black_24dp.svg" />
+    <link rel="stylesheet" href="/shoptacle/css/style.css">
+
+    <title>Shoptacle - Add</title>
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <a href="/shoptacle/index.html">
+                <h2>Shoptacle</h2>
+            </a>
+        </div>
+
+        <div class="search-container">
+            <input type="text" id="search-bar">
+            <button id="search-button" onclick="search()">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <label> ADD NEW PRODUCTS </label>
+        <form id="submit">
+            <div class="form-container">
+                <label for="name">Name:</label>
+                <input type="text" id="name">
+            </div>
+            
+            <div class="form-container">
+                <label for="name">Price:</label>
+                <input type="number" id="price">
+                </div>
+
+            <div class="form-container">
+                <label for="name">Category:</label>
+                <input type="text" list="categorylist" id="category">
+                <datalist id="categorylist">
+                    <option>Top</option>
+                    <option>Jackets</option>
+                    <option>Shoes</option>
+                    <option>Bottoms</option>
+                </datalist>
+            </div>
+
+            <div class="form-container">
+                <input type="submit" value="Submit">
+            </div>
+        </form>
+    </main>
+
+    <script src="/shoptacle/js/add.js"></script>
+    <script src="/shoptacle/js/search.js"></script>
+</body>
+</html>

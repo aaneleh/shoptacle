@@ -1,51 +1,44 @@
 [
     {
         "id": 0,
-        "name": "White T-Shirt",
+        "name": "WHITE T-SHIRT",
         "price": 29.99,
-        "date-added": "2022-04-23T18:25:43.511Z",
-        "category": "tops"
+        "category": "TOPS"
     },
     {
         "id": 1,
-        "name": "Black T-Shirt",
+        "name": "BLACK T-SHIRT",
         "price": 29.99,
-        "date-added": "2022-04-23T18:25:43.511Z",
-        "category": "tops"
+        "category": "TOPS"
     },
     {
         "id": 2,
-        "name": "Jean jacket",
+        "name": "DENIM JACKET",
         "price": 59.99,
-        "date-added": "2022-04-23T18:25:43.511Z",
-        "category": "jackets"
+        "category": "JACKETS"
     },
     {
         "id": 3,
-        "name": "Nike sneaker",
+        "name": "NIKE SNEAKER",
         "price": 54.99,
-        "date-added": "2022-04-23T18:25:43.511Z",
-        "category": "shoes"
+        "category": "SHOES"
     },
     {
         "id": 4,
-        "name": "Black Boot",
+        "name": "BLACK BOOTS",
         "price": 109.99,
-        "date-added": "2022-04-23T18:25:43.511Z",
-        "category": "shoes"
+        "category": "SHOES"
     },
     {
         "id": 5,
-        "name": "Dark green shorts",
-        "price": 89.99,
-        "date-added": "2022-04-23T18:25:43.511Z",
-        "category": "bottoms"
+        "name": "DARK GREEN SHORTS",
+        "price": 59.99,
+        "category": "BOTTOMS"
     },
     {
         "id": 6,
-        "name": "Black Jeans",
+        "name": "BLACK JEANS",
         "price": 129.99,
-        "date-added": "2022-04-23T18:25:43.511Z",
-        "category": "bottoms"
+        "category": "BOTTOMS"
     }
 ]
